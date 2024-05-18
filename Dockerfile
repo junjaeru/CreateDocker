@@ -9,9 +9,9 @@ RUN apt-get update --allow-releaseinfo-change && apt-get install -y \
 
 # conda create
 RUN conda update -n base -c defaults conda
-RUN conda create -n end2you_tf python==3.9
+RUN conda create -n testimage python==3.9
 # activate env
-SHELL ["conda", "run", "-n", "end2you_tf", "/bin/bash", "-c"]
+SHELL ["conda", "run", "-n", "testimage", "/bin/bash", "-c"]
 
 # install pip package
 RUN conda update -n base -c defaults conda
