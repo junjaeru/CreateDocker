@@ -1,0 +1,22 @@
+version: "2.3"
+services:
+  end2you_tf:
+    container_name: end2you_tf
+    image: end2you_tf
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    ports:
+      - "0303:0303"
+      - "1018:1018"
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - ../:/home/dl-box/Documents/docker_hattori/
+    mem_limit: '60gb'
+
+    command: /opt/conda/envs/end2you_tf/bin/jupyter notebook --ip='0.0.0.0' --port=0303 --no-browser --allow-root
+
