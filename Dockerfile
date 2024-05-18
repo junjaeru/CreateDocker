@@ -31,3 +31,6 @@ RUN conda install -c conda-forge opencv
 RUN conda install -c conda-forge matplotlib
 RUN pip install chardet
 RUN pip install cchardet
+
+#path
+ENV PATH /opt/conda/envs/testimage/bin:$PATH
