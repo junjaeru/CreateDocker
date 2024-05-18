@@ -18,6 +18,7 @@ RUN conda update -n base -c defaults conda
 RUN conda install tensorflow=2.10.*=gpu_*
 RUN pip install numpy==1.21.0
 RUN pip install keras-tcn --no-dependencies
+RUN conda install -c anaconda jupyter
 
 #path
 ENV PATH /opt/conda/envs/testimage/bin:$PATH
