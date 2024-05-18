@@ -16,4 +16,4 @@ services:
     volumes:
       - ../:/home/dl-box/data/volumes/
     mem_limit: '30gb'
-
+    command: /opt/conda/envs/testimage/bin/jupyter notebook --ip='0.0.0.0' --port=0900 --no-browser --allow-root
