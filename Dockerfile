@@ -31,9 +31,3 @@ RUN conda install -c conda-forge opencv
 RUN conda install -c conda-forge matplotlib
 RUN pip install chardet
 RUN pip install cchardet
-
-#path
-ENV PATH /opt/conda/envs/end2you_tf/bin:$PATH
-
-#path to my library
-#ENV PYTHONPATH /home/dl-box/Document/docker-em/test/end2you-master
