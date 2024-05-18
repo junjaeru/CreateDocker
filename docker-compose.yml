@@ -1,6 +1,6 @@
 version: "2.3"
 services:
-  testcontainer:
+  containersettings:
     container_name: testcontainer
     image: testimage
     logging:
