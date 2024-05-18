@@ -1,6 +1,6 @@
 version: "2.3"
 services:
-  end2you_tf:
+  testcontainer:
     container_name: testcontainer
     image: testimage
     logging:
@@ -8,8 +8,7 @@ services:
       options:
         max-size: 50m
     ports:
-      - "0303:0303"
-      - "1018:1018"
+      - "0900:0900"
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
