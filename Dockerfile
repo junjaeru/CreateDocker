@@ -19,18 +19,5 @@ RUN conda install tensorflow=2.10.*=gpu_*
 RUN pip install numpy==1.21.0
 RUN pip install keras-tcn --no-dependencies
 
-RUN conda install tqdm
-RUN conda install scikit-learn
-RUN conda install scikit-learn-intelex
-RUN conda install natsort
-RUN conda install scipy
-RUN conda install pydot pydotplus
-RUN conda install -c anaconda jupyter
-RUN conda install -c conda-forge pydub
-RUN conda install -c conda-forge opencv
-RUN conda install -c conda-forge matplotlib
-RUN pip install chardet
-RUN pip install cchardet
-
 #path
 ENV PATH /opt/conda/envs/testimage/bin:$PATH
